@@ -7,7 +7,7 @@ YouTube to MP3 Local Converter is a lightweight desktop application that convert
 - Windows 10 or later
 - Python 3.8+ (only needed to build the EXE)
 
-**Installation & Setup Instructions**
+### Installation & Setup Instructions
 
 1) Install Python using the following installer:
 https://www.python.org/ftp/python/pymanager/python-manager-26.2.msix
