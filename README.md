@@ -4,5 +4,5 @@ YouTube to MP3 Local Converter is a lightweight desktop application that convert
 
 1) Install Python: https://www.python.org/ftp/python/pymanager/python-manager-26.2.msix
 2) Download (yt-mp3-exe-builder-v4.zip)
-3) Extract
+3) Extract (yt-mp3-exe-builder-v4.zip) folder
 4) Run BUILD.bat
