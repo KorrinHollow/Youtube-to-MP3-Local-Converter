@@ -19,4 +19,4 @@ https://www.python.org/ftp/python/pymanager/python-manager-26.2.msix
 12) If Windows displays any security warnings or prompts, **allow the application to run** and **approve any necessary exceptions**.
     
 14) Your **default web browser will automatically open** and connect to the locally hosted application.
-   _ (When you close the website the application running in the background will also autostop)_
+   _(When you close the website the application running in the background will also autostop)_
