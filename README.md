@@ -6,9 +6,9 @@ YouTube to MP3 Local Converter is a lightweight desktop application that convert
 1) Install Python using the following installer:
 https://www.python.org/ftp/python/pymanager/python-manager-26.2.msix
 
-2) Download the file **yt-mp3-exe-builder-v4.zip**.
+2) Download the file **yt-mp3-exe-builder-v7.zip**.
    
-4) Extract the contents of **yt-mp3-exe-builder-v4.zip** to a folder of your choice.
+4) Extract the contents of **yt-mp3-exe-builder-v7.zip** to a folder of your choice.
    
 6) Open the extracted folder and run **BUILD.bat**.
    
@@ -20,3 +20,14 @@ https://www.python.org/ftp/python/pymanager/python-manager-26.2.msix
     
 14) Your **default web browser will automatically open** and connect to the locally hosted application.
    _(Closing Webpage = Application running in the background will also autostop)_
+
+
+## Bug Fixes
+
+- **yt-dlp not found in EXE** — Switched from subprocess to the yt-dlp Python API so it works correctly when bundled
+- **PyInstaller flag conflict** — Removed `--collect-all` CLI flag that conflicts when a `.spec` file is used
+- **`pyinstaller` command not found** — `BUILD.bat` now uses `python -m PyInstaller` which works regardless of PATH
+- **Files not saving to custom folder** — Output path is now snapshotted at job-creation time and passed directly into the conversion thread
+- **Browse button scanning entire folder** — Replaced broken folder-picker with a plain text input for the save path
+- **Server staying alive after browser close** — Heartbeat system pings every 3s; server shuts down if pings stop for 6s
+- **Custom folder files deleted on clear** — Clear now only removes files from the internal default folder, never a user-defined path
